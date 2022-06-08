@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>マップにポップアップ追加</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+<link rel="stylesheet" type="text/css" href="map.css">
+</head>
+<body>
+	<div id="map"></div>
+	<ul class="header-dropmenu">
+        <li>
+          <a id="now_distance">きょり</a>
+          <ul id="distance">
+            <li value="1"><a>300M</a></li>
+            <li value="2"><a>500M</a></li>
+            <li value="3"><a>1000M</a></li>
+            <li value="4"><a>2000M</a></li>
+            <li value="5"><a>3000M</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="now_shop_type">ジャンル</a>
+          <ul id="shop_type">
+            <li value="1"><a>居酒屋</a></li>
+            <li value="2"><a>ダイニングバー・バル</a></li>
+            <li value="3"><a>創作料理</a></li>
+            <li value="4"><a>和食</a></li>
+            <li value="5"><a>洋食</a></li>
+            <li value="6"><a>イタリアン・フレンチ</a></li>
+            <li value="7"><a>中華</a></li>
+            <li value="8"><a>焼肉・ホルモン</a></li>
+            <li value="17"><a>韓国料理</a></li>
+            <li value="9"><a>アジア・エスニック料理</a></li>
+            <li value="10"><a>各国料理</a></li>
+            <li value="11"><a>カラオケ・パーティ</a></li>
+            <li value="12"><a>バー・カクテル</a></li>
+            <li value="13"><a>ラーメン</a></li>
+            <li value="16"><a>お好み焼き・もんじゃ</a></li>
+            <li value="14"><a>カフェ・スイーツ</a></li>
+            <li value="15"><a>その他グルメ</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="now_open_time">営業時間</a>
+          <ul id="open_time">
+            <li value="0"><a>指定なし</a></li>
+            <li value="1"><a>深夜(23時以降)</a></li>
+          </ul>
+        </li>
+    </ul>
+    <button id="button">検索</button></br>
+    <div id = "ad">
+      <a href="http://webservice.recruit.co.jp/"><img src="http://webservice.recruit.co.jp/banner/hotpepper-m.gif" alt="ホットペッパー Webサービス" width="88" height="35" border="0" title="ホットペッパー Webサービス"></a>
+    </div>
+	<script src="map.js"></script>
+</body>
+</html>
